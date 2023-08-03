@@ -1,4 +1,5 @@
 import turtle
+import pandas
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
@@ -10,6 +11,7 @@ turtle.shape(image)
 
 answer = screen.textinput(title="Guess the State", prompt="What's another state's name?")
 
+data = pandas.read_csv("50_states.csv")
 
 
 
