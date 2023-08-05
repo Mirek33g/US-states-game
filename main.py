@@ -11,9 +11,7 @@ screen.tracer(0)
 scoreboard = Scoreboard()
 
 
-score = 0
-
-while score < 51:
+while scoreboard.score < 51:
     screen.update()
     answer = screen.textinput(title="Guess the state", prompt="What's another state's")
     data = pandas.read_csv("50_states.csv")
